@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #about {
+            height: 70vh;
+        }
+
+        .about-container {
+            width: 97%;
+            padding: 20px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            color: white;
+            background-color: #198754;
+
+        }
+
+        .about-item {
+            width: 100%;
+            height: 400px;
+        }
+
+        .about-item>h1 {
+            padding: 6%;
+            margin-top: 80px;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        .about-item>p {
+            font-family: 'Roboto', sans-serif;
+            padding: 6%;
+            line-height: 1.7;
+
+        }
+
+        .about-item:last-child {
+            height: 500px;
+        }
+
+        .about-item:last-child>img {
+            margin-top: -38px;
+            height: fit-content;
+        }
+
+        @media screen and (max-width:470px) {
+            .about-container {
+                flex-direction: column;
+            }
+
+            .about-item:last-child>img {
+                margin-top: 190px;
+                height: fit-content;
+            }
+
+            .about-item:last-child {
+                height: fit-content;
+            }
+        }
+
+        /* service section */
+        #service {
+            height: 100vh;
+            background-color: white;
+        }
+
+        .service-container {
+            width: 97%;
+            padding: 20px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            color: white;
+
+        }
+
+        .service-item {
+            
+            width: 20%;
+            height: 200px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .service-item:hover{
+            background-color: #c7d3ce;
+            color: rgb(185, 26, 26);
+        }
+        #service>h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: 10;
+            color: #212529;
+            text-align: center;
+        }
+        .service-item >h3{
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            color: #212529;
+        }
+
+
+        #service>p {
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .fa-truck, .fa-right-left, .fa-rectangle-ad, .fa-user{
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            color: #198754;
+            margin-top: 20px;
+        }
+        @media screen and (max-width:470px) {
+            #service{
+                height: fit-content;
+            }
+            .service-container{
+                flex-direction: column;
+            }
+            .service-item{
+                width: 100%;
+            }
+        }
+             /* brand section */
+             #brand {
+            height: 100vh;
+        }
+
+        .brand-container {
+            width: 97%;
+            padding: 20px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            color: white;
+
+        }
+
+        .brand-item {
+            width: 20%;
+            height: 200px;
+            margin-top: 50px;
+        }
+
+        #brand>h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: 10;
+            color: #212529;
+            text-align: center;
+        }
+
+        #brand>p {
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .brand-item >img{
+            width: 100%;
+        }
+        @media screen and (max-width:470px) {
+            #brand{
+                height: fit-content;
+            }
+            .brand-container{
+                flex-direction: column;
+            }
+            .brand-item{
+                width: 100%;
+            }
+        }
+           /* Main section */
+           #main{
+            height: 100vh;
+            background-color: rgb(33,41,52);
+        }
+        .main-container {
+            width: 97%;
+            padding: 20px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .main-item {
+            font-family: 'Roboto', sans-serif;
+
+            padding: 2% 1%;
+            width: 29%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            display: flex;
+            gap: 10px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 25px;
+        }
+        .main-item >h1{
+            color: #198754;
+            font-weight: 300;
+        }
+        span > p{
+            color: white;
+        }
+        span >p:hover{
+            color: #198754;
+            cursor: pointer;
+        }
+        .main-item > a{
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px ;
+            font-weight: 300 ;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+        }
+        .main-item > a:hover{
+            color: #198754;
+            cursor: pointer;
+        }
+        .subscribe-container{
+            width: 92%;
+            padding: 20px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .subscribe-item{
+            width: 50%;
+            height: 100px;
+        }
+        .socialmedia{
+            font-size: 1.3rem;
+            color: #3c4146;
+           
+        }
+        .fa-facebook-f,.fa-instagram, .fa-twitter,.fa-linkedin{
+            width: 5%;
+            text-align: center;
+            padding: 2px 2px 2px 2px ;
+        }
+        @media screen and (max-width:470px) {
+            #main{
+                height: fit-content;
+            }
+            .main-container{
+                flex-direction: column;
+            }
+            .main-item{
+                width: 100%;
+            }
+
+            .subscribe-container{
+                flex-direction: column;
+            }
+            .subscribe-item{
+                width: 100%;
+            }
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="about-container">
+        <div class="about-item">
+            <h1>About Us</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum, suscipit expedita dolore sint
+                eaque corrupti vero saepe dicta deleniti illum adipisci perspiciatis dolorum eligendi laudantium, quam
+                dignissimos maxime. Nesciunt, sed et optio non impedit quas voluptatibus repudiandae facere quibusdam
+                aut, deleniti, iure alias aspernatur ullam obcaecati maxime harum rerum voluptatum. Pariatur vero earum
+                porro accusamus odio aperiam facilis voluptatibus!</p>
+        </div>
+        <div class="about-item">
+            <img src="./about-hero.svg" alt="">
+        </div>
+    </div>
+    <section id="service">
+        <h1>Our Service</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod praesentium eius corporis assumenda
+            distinctio, aut fugiat porro. Itaque, perspiciatis repellendus!</p>
+        <div class="service-container">
+            <div class="service-item">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Delivery Services</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-right-left"></i>
+                <h3>Shipping & Return</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-rectangle-ad"></i>
+                <h3>Promotion</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-user"></i>
+                <h3>24 Hours Service</h3>
+            </div>
+        </div>
+    </section>
+    <section id="brand">
+        <h1>Our Brands</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod praesentium eius corporis assumenda
+            distinctio, aut fugiat porro. Itaque, perspiciatis repellendus!</p>
+        <div class="brand-container">
+            <div class="brand-item"> <img src="./brand_01.png" alt=""></div>
+            <div class="brand-item"><img src="./brand_02.png" alt=""> </div>
+            <div class="brand-item"><img src="./brand_03.png" alt=""></div>
+            <div class="brand-item"><img src="/brand_04.png" alt=""> </div>
+        </div>
+    </section>
+    <div id="main">
+        <div class="main-container">
+            <div class="main-item">
+                <h1>Zay Shop</h1>
+                <hr style="font-weight: 200; margin-top: 5px; color: #212529;">
+                <span><i class="fa-solid fa-location-dot" style="color: white;"></i><p>123 Consectetur at ligula 10660</p></span>
+                <span><i class="fa-solid fa-phone" style="color: white;"></i><p> 010-020-0340</p></span>
+                <span><i class="fa-solid fa-envelope" style="color: white;"></i><p>info@company.com</p></span>
+            </div>
+            <div class="main-item">
+                <h1>Products</h1>
+                <hr style="margin-top: 5px;">
+                <a href="#">Luxury</a>
+                <a href="#">Sport Wears</a>
+                <a href="#">Men's Shoes</a>
+                <a href="#">Women's Shoes</a>
+                <a href="#">Popular Dress</a>
+                <a href="#">Gym Accessories</a>
+                <a href="#">Sport Shoes</a>
+            </div>
+            <div class="main-item">
+                <h1>Further Info</h1>
+                <hr style="margin-top: 5px;">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Shop Locations</a>
+                <a href="#">FAQS</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <hr>
+        <div class="subscribe-container">
+            <div class="subscribe-item">
+               <span class="socialmedia">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+               </span> 
+            </div>
+            <div class="subscribe-item">
+                <input type="text" name="" id="" style="border-radius: 5px; margin-top: 10px; height: 45px; border: 3px solid #198754;"><label for="" style=" height: 120px; width: 70px; background-color: #198754;color: white; padding: 15px 20px 15px 20px; border-radius: 5px;">Subscribe</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
